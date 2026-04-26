@@ -1,0 +1,104 @@
+schema_version: "1.0"
+
+preset:
+  id: "architecture-governance"
+  name: "Architecture Governance"
+  version: "0.2.0"
+  description: "Adds secure software architecture, STRIDE+CAPEC threat modeling, arc42 security cross-cutting concepts, S-ADRs, Zero Trust applicability, and OWASP SAMM governance to Spec Kit."
+  author: "Thorsten Hindermann"
+  repository: "https://github.com/hindermath/spec-kit-preset-architecture-governance"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.8.0"
+
+provides:
+  templates:
+    - type: "template"
+      name: "constitution-template"
+      file: "templates/constitution-addendum.md"
+      description: "Append architecture-governance principles"
+      strategy: "append"
+
+    - type: "template"
+      name: "spec-template"
+      file: "templates/spec-addendum.md"
+      description: "Append architecture and threat-modeling sections"
+      strategy: "append"
+
+    - type: "template"
+      name: "plan-template"
+      file: "templates/plan-addendum.md"
+      description: "Append architecture planning checks"
+      strategy: "append"
+
+    - type: "template"
+      name: "tasks-template"
+      file: "templates/tasks-addendum.md"
+      description: "Append architecture and evidence tasks"
+      strategy: "append"
+
+    - type: "template"
+      name: "architecture-agent-guidance-addendum-template"
+      file: "templates/agent-file-addendum.md"
+      description: "Standalone agent guidance addendum for architecture governance"
+
+    - type: "template"
+      name: "threat-model-template"
+      file: "templates/threat-model-template.md"
+      description: "Starter STRIDE+CIA+CAPEC threat model with risk scoring"
+
+    - type: "template"
+      name: "adr-template"
+      file: "templates/adr-template.md"
+      description: "Starter Security Architecture Decision Record (S-ADR) with compliance evidence table"
+
+    - type: "template"
+      name: "arc42-security-template"
+      file: "templates/arc42-security-template.md"
+      description: "Starter arc42 Section 8 security cross-cutting concepts (auth, encryption, validation, error handling, logging, dependencies, deployment)"
+
+    - type: "template"
+      name: "security-quality-scenarios-template"
+      file: "templates/security-quality-scenarios-template.md"
+      description: "Starter iSAQB CPSA-F security quality attribute scenarios"
+
+    - type: "template"
+      name: "zero-trust-applicability-template"
+      file: "templates/zero-trust-applicability-template.md"
+      description: "Starter NIST SP 800-207 Zero Trust applicability record"
+
+    - type: "template"
+      name: "samm-assessment-template"
+      file: "templates/samm-assessment-template.md"
+      description: "Starter OWASP SAMM maturity assessment record"
+
+    - type: "command"
+      name: "speckit.specify"
+      file: "commands/speckit.specify.md"
+      description: "Wrap specify with architecture-governance checks"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.plan"
+      file: "commands/speckit.plan.md"
+      description: "Wrap plan with architecture-governance checks"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.tasks"
+      file: "commands/speckit.tasks.md"
+      description: "Wrap tasks with architecture-governance checks"
+      strategy: "wrap"
+
+tags:
+  - "architecture"
+  - "governance"
+  - "threat-modeling"
+  - "stride"
+  - "capec"
+  - "arc42"
+  - "adr"
+  - "zero-trust"
+  - "samm"
+  - "isaqb"
