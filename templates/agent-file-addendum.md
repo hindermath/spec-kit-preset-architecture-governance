@@ -25,6 +25,10 @@
   `N/A`, or `Open` and identify cloud-service selection, provider
   dependencies, audit evidence, autonomy risks, and exit/portability
   concerns where applicable.
+- Evaluate `BSI C5` cloud compliance assurance when cloud assurance, C5
+  testat/report status, shared-responsibility gaps, provider/subprocessor
+  dependencies, data location, logging, backup, or incident evidence are in
+  scope. Record `Applicable`, `N/A`, or `Open`.
 - Surface required architecture evidence under `docs/security/` (S-ADRs
   in `docs/security/adr/`).
 - Document every `N/A` decision with rationale; never silently omit.

@@ -1,6 +1,6 @@
 # Architecture Governance Preset
 
-Version: `0.3.0`
+Version: `0.4.0`
 Requires: `spec-kit >= 0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in 0.8.x).
 
@@ -20,7 +20,7 @@ Relationship to `isaqb-architecture-governance`:
   view, quality scenarios, ADRs, risks, and technical debt.
 - `architecture-governance` covers secure architecture: trust
   boundaries, threat modeling, STRIDE/CAPEC, Zero Trust, S-ADRs, OWASP
-  SAMM, and BSI C3A cloud autonomy applicability.
+  SAMM, BSI C3A cloud autonomy applicability, and BSI C5 cloud assurance.
 - If both general and security-relevant architecture are in scope, use
   both presets together.
 
@@ -49,6 +49,8 @@ Standards and concepts in scope:
 - `OWASP SAMM`
 - `BSI C3A` (Criteria enabling Cloud Computing Autonomy) as a conditional
   cloud sovereignty and autonomy applicability check
+- `BSI C5` (Cloud Computing Compliance Criteria Catalogue) as a conditional
+  cloud compliance and assurance check
 
 Preset strategy:
 
@@ -60,7 +62,8 @@ Preset strategy:
   shared architecture workflow
 - provide starter templates for threat models, S-ADRs, arc42 Section 8
   security concepts, security quality scenarios, Zero Trust applicability,
-  OWASP SAMM assessment, and BSI C3A cloud autonomy applicability
+  OWASP SAMM assessment, BSI C3A cloud autonomy applicability, and BSI C5
+  cloud compliance assurance
 
 Evidence templates included:
 
@@ -76,6 +79,10 @@ Evidence templates included:
 - `cloud-autonomy-applicability-template` (BSI C3A Applicable/N/A record
   for cloud service selection, provider dependencies, audit evidence, and
   autonomy risks)
+- `cloud-compliance-assurance-template` (BSI C5 Applicable/N/A record for
+  cloud testat/report status, assurance scope, shared-responsibility gaps,
+  provider/subprocessor dependencies, data location, logging, backup, and
+  incident evidence)
 
 Default evidence location: `docs/security/`. S-ADRs default to
 `docs/security/adr/` as one file per decision.
@@ -90,6 +97,8 @@ When to use:
 - projects selecting, operating, or depending on cloud services where
   digital sovereignty, provider dependency, audit evidence, or exit risk
   must be made explicit
+- projects that need cloud assurance evidence for C5 testat/report status,
+  shared responsibility, data location, logging, backup, or incident response
 
 When not to use:
 
@@ -98,7 +107,7 @@ When not to use:
 - teams that only want code-level secure-development prompts (use
   `security-governance` instead or in combination)
 - projects with no released or operated cloud runtime where cloud use is
-  limited to general development infrastructure; record C3A as `N/A`
+  limited to general development infrastructure; record C3A/C5 as `N/A`
   instead of creating unnecessary evidence
 
 MSL note:

@@ -3,8 +3,8 @@ schema_version: "1.0"
 preset:
   id: "architecture-governance"
   name: "Architecture Governance"
-  version: "0.3.0"
-  description: "Adds secure software architecture, STRIDE+CAPEC threat modeling, arc42 security cross-cutting concepts, S-ADRs, Zero Trust applicability, OWASP SAMM governance, and BSI C3A cloud autonomy applicability to Spec Kit."
+  version: "0.4.0"
+  description: "Adds secure software architecture, STRIDE+CAPEC threat modeling, arc42 security cross-cutting concepts, S-ADRs, Zero Trust applicability, OWASP SAMM governance, BSI C3A cloud autonomy, and BSI C5 cloud compliance assurance to Spec Kit."
   author: "Thorsten Hindermann"
   repository: "https://github.com/hindermath/spec-kit-preset-architecture-governance"
   license: "MIT"
@@ -78,6 +78,11 @@ provides:
       file: "templates/cloud-autonomy-applicability-template.md"
       description: "Starter BSI C3A cloud autonomy applicability record"
 
+    - type: "template"
+      name: "cloud-compliance-assurance-template"
+      file: "templates/cloud-compliance-assurance-template.md"
+      description: "Starter BSI C5 cloud compliance assurance record"
+
     - type: "command"
       name: "speckit.specify"
       file: "commands/speckit.specify.md"
@@ -110,3 +115,5 @@ tags:
   - "cloud"
   - "sovereignty"
   - "c3a"
+  - "c5"
+  - "assurance"
