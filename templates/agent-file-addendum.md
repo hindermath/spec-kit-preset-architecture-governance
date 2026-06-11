@@ -20,6 +20,11 @@
   service-based, cloud-near, or remotely managed systems.
 - For long-lived projects, surface `OWASP SAMM` follow-up actions when
   the maturity posture is touched.
+- Evaluate `BSI C3A` cloud autonomy applicability when the project selects,
+  operates, or materially depends on cloud services. Record `Applicable`,
+  `N/A`, or `Open` and identify cloud-service selection, provider
+  dependencies, audit evidence, autonomy risks, and exit/portability
+  concerns where applicable.
 - Surface required architecture evidence under `docs/security/` (S-ADRs
   in `docs/security/adr/`).
 - Document every `N/A` decision with rationale; never silently omit.

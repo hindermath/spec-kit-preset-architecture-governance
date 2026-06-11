@@ -1,13 +1,13 @@
 # Architecture Governance Preset
 
-Version: `0.2.0`
+Version: `0.3.0`
 Requires: `spec-kit >= 0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in 0.8.x).
 
 Purpose:
 
-- inject secure-software-architecture and threat-modeling expectations
-  into Spec Kit workflows
+- inject secure-software-architecture, threat-modeling, and cloud-autonomy
+  expectations into Spec Kit workflows
 - keep architecture concerns separate from the more tactical
   secure-development preset; the two compose cleanly side by side
 - keep secure-architecture concerns separate from the general
@@ -19,8 +19,8 @@ Relationship to `isaqb-architecture-governance`:
   architecture goals, context, building blocks, runtime view, deployment
   view, quality scenarios, ADRs, risks, and technical debt.
 - `architecture-governance` covers secure architecture: trust
-  boundaries, threat modeling, STRIDE/CAPEC, Zero Trust, S-ADRs, and
-  OWASP SAMM.
+  boundaries, threat modeling, STRIDE/CAPEC, Zero Trust, S-ADRs, OWASP
+  SAMM, and BSI C3A cloud autonomy applicability.
 - If both general and security-relevant architecture are in scope, use
   both presets together.
 
@@ -47,6 +47,8 @@ Standards and concepts in scope:
 - `iSAQB CPSA-F` security quality attribute scenarios
 - `Zero Trust` (NIST SP 800-207)
 - `OWASP SAMM`
+- `BSI C3A` (Criteria enabling Cloud Computing Autonomy) as a conditional
+  cloud sovereignty and autonomy applicability check
 
 Preset strategy:
 
@@ -58,7 +60,7 @@ Preset strategy:
   shared architecture workflow
 - provide starter templates for threat models, S-ADRs, arc42 Section 8
   security concepts, security quality scenarios, Zero Trust applicability,
-  and OWASP SAMM assessment
+  OWASP SAMM assessment, and BSI C3A cloud autonomy applicability
 
 Evidence templates included:
 
@@ -71,6 +73,9 @@ Evidence templates included:
 - `security-quality-scenarios-template` (iSAQB CPSA-F)
 - `zero-trust-applicability-template` (NIST SP 800-207 tenets)
 - `samm-assessment-template`
+- `cloud-autonomy-applicability-template` (BSI C3A Applicable/N/A record
+  for cloud service selection, provider dependencies, audit evidence, and
+  autonomy risks)
 
 Default evidence location: `docs/security/`. S-ADRs default to
 `docs/security/adr/` as one file per decision.
@@ -82,6 +87,9 @@ When to use:
 - teams that want documented threat models and S-ADRs as first-class
   artefacts
 - systems that need a reusable Zero Trust or SAMM discussion surface
+- projects selecting, operating, or depending on cloud services where
+  digital sovereignty, provider dependency, audit evidence, or exit risk
+  must be made explicit
 
 When not to use:
 
@@ -89,6 +97,9 @@ When not to use:
   surface
 - teams that only want code-level secure-development prompts (use
   `security-governance` instead or in combination)
+- projects with no released or operated cloud runtime where cloud use is
+  limited to general development infrastructure; record C3A as `N/A`
+  instead of creating unnecessary evidence
 
 MSL note:
 

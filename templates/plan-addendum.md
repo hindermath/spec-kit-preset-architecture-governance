@@ -22,3 +22,7 @@
 - Plan `Zero Trust` (NIST SP 800-207) applicability evaluation for
   distributed, service-based, cloud-near, or remote-access changes.
 - Plan `OWASP SAMM` follow-up actions for long-lived projects.
+- Plan `BSI C3A` cloud autonomy applicability evaluation for cloud-service
+  selection, cloud operation, managed services, container/artifact hosting,
+  or provider-dependent deployments. If C3A is `N/A`, plan the short
+  rationale.

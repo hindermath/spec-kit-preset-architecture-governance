@@ -15,9 +15,14 @@
   service-based, cloud-near, or remote-access systems.
 - Add `OWASP SAMM` follow-up tasks for long-lived projects whose maturity
   posture is touched by this change.
+- Add `BSI C3A` cloud autonomy applicability tasks for cloud-service
+  selection, cloud operation, managed services, container/artifact hosting,
+  or provider-dependent deployments. Use
+  `cloud-autonomy-applicability-template`.
 - Add evidence-update tasks under `docs/security/` for each new or
   changed artefact (S-ADR, threat model, arc42 security concept, Zero
-  Trust note, SAMM assessment, quality scenarios).
+  Trust note, SAMM assessment, cloud autonomy applicability, quality
+  scenarios).
 - Add a task to verify Defense in Depth, Least Privilege, Fail-Safe
   Defaults, Attack Surface Reduction, and Separation of Concerns are
   realised in the implementation, not just documented.
