@@ -30,3 +30,10 @@
   selection, cloud operation, managed services, container/artifact hosting,
   provider-dependent deployments, or cloud assurance reviews. If C5 is
   `N/A`, plan the short rationale.
+
+## Audit Evidence Planning
+
+- Plan audit-ready Markdown evidence for this Spec-Kit run, including owner, reviewer, evidence path, and standard-specific applicability.
+- Plan how each relevant checkpoint will be recorded as `Applicable`, `N/A`, or `Open`.
+- Plan concrete evidence updates under the default evidence directory for this preset; do not leave checklist templates unfilled.
+- Treat `Open` as temporary: assign an owner, follow-up, and re-evaluation trigger.

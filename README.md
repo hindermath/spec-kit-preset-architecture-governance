@@ -1,6 +1,6 @@
 # Architecture Governance Preset
 
-Version: `0.4.0`
+Version: `0.5.0`
 Requires: `spec-kit >= 0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in 0.8.x).
 
@@ -67,6 +67,7 @@ Preset strategy:
 
 Evidence templates included:
 
+- Spec-Kit run evidence fields are embedded in the evidence templates to support audit-ready applicability, N/A rationale, reviewer, and follow-up records.
 - `threat-model-template` (STRIDE × CIA matrix, CAPEC mapping, risk
   scoring)
 - `adr-template` (S-ADR with compliance evidence table)
@@ -114,6 +115,10 @@ MSL note:
 
 - this preset references MSL only as an architectural runtime constraint
 - the primary MSL governance surface remains in `security-governance`
+
+Release notes:
+
+- `v0.5.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown documents and checklists can record applicability, N/A rationale, reviewer, evidence path, residual risk, and follow-up per standards-relevant Spec-Kit run.
 
 Recommended standalone install priority:
 

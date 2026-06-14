@@ -32,3 +32,8 @@
 - Surface required architecture evidence under `docs/security/` (S-ADRs
   in `docs/security/adr/`).
 - Document every `N/A` decision with rationale; never silently omit.
+
+## Audit-Ready Spec-Kit Evidence
+
+- When this preset applies, generated or updated Markdown evidence must include the Spec-Kit run, owner/reviewer, evidence path, applicability decision, N/A rationale where relevant, and open follow-up tracking.
+- Do not treat an unfilled starter template as evidence. Evidence exists only after the current run has recorded concrete decisions, paths, and rationale.
