@@ -20,7 +20,7 @@ without duplicating its code-level and SDLC-level rules.*
 
 Das Qualitätsziel ist eine prüffähige Architekturbegründung: Trust
 Boundaries, Angriffsflächen, Sicherheitsqualitätsziele, Cloud-Abhängigkeiten,
-S-ADRs und begründete N/A-Entscheidungen sollen vor der Implementierung
+S-ADRs und begründete `N/A`-Entscheidungen sollen vor der Implementierung
 sichtbar sein.
 
 *The quality goal is reviewable architecture reasoning: trust boundaries,
@@ -50,8 +50,8 @@ architecture governance.*
 - Wrapper für `speckit.specify`, `speckit.plan` und `speckit.tasks`
 - Vorlagen für Threat Models, S-ADRs, arc42 Section 8, Security Quality
   Scenarios, Zero Trust, OWASP SAMM, BSI C3A und BSI C5
-- auditfähige Spec-Kit-Run-Evidence-Felder für Anwendbarkeit, N/A-Begründung,
-  Reviewer, Evidence-Pfad, Restrisiko und Follow-up
+- auditfähige Spec-Kit-Run-Evidence-Felder für Anwendbarkeit,
+  `N/A`-Begründung, Reviewer, Evidence-Pfad, Restrisiko und Follow-up
 
 *The preset provides addenda for the main Spec-Kit artifacts and agent
 guidance, wraps the normal Specify/Plan/Tasks flow, and supplies templates for
@@ -72,7 +72,7 @@ deployment, secret, or provider-administration authority.*
 
 ## Voraussetzungen / Prerequisites
 
-1. kompatible GitHub Spec Kit CLI;
+1. kompatible GitHub Spec-Kit CLI;
 2. gültige Spec-Kit-Integration im Ziel-Repository;
 3. versionierte Constitution und Agent-Guidance;
 4. geklärte Evidence-Orte, standardmäßig `docs/security/` und
@@ -80,7 +80,7 @@ deployment, secret, or provider-administration authority.*
 5. ein initiales Verständnis von Systemgrenzen, Akteuren, Integrationen und
    Cloud-/Betriebsmodell.
 
-*Before installation, use a compatible GitHub Spec Kit CLI, a valid Spec-Kit
+*Before installation, use a compatible GitHub Spec-Kit CLI, a valid Spec-Kit
 integration, versioned constitution and agent guidance, clear evidence
 locations, and an initial understanding of system boundaries, actors,
 integrations, and operating model.*
@@ -193,10 +193,17 @@ Prüfe, ob Trust Boundaries, externe Schnittstellen oder missbrauchbare Pfade im
 Spec oder Plan ausdrücklich benannt sind. Ohne Systemgrenze kann kein gutes
 Threat Model entstehen.
 
+*Check whether trust boundaries, external interfaces, or abusable paths are
+explicitly named in the spec or plan. Without a system boundary, a useful
+threat model cannot emerge.*
+
 ### C3A oder C5 ist nicht relevant / C3A or C5 Is Not Relevant
 
 Dokumentiere `N/A` mit kurzer Begründung. Entwicklungsinfrastruktur allein ist
 nicht automatisch ein released oder operated cloud runtime.
+
+*Document `N/A` with a short rationale. Development infrastructure alone is
+not automatically a released or operated cloud runtime.*
 
 ### Allgemeine Architektur fehlt / General Architecture Is Missing
 
@@ -204,15 +211,19 @@ Nutze zusätzlich `isaqb-architecture-governance`, wenn Ziele, Kontext,
 Bausteine, Runtime View, Deployment View, ADRs, Risiken oder technische
 Schulden dokumentiert werden müssen.
 
+*Also use `isaqb-architecture-governance` when goals, context, building
+blocks, runtime view, deployment view, ADRs, risks, or technical debt must be
+documented.*
+
 ## Version 0.5.0 / Version 0.5.0
 
 `v0.5.0` ergänzt auditfähige Spec-Kit-Run-Evidence-Felder, damit generierte
-Markdown-Dokumente und Checklisten Anwendbarkeit, N/A-Begründung, Reviewer,
+Markdown-Dokumente und Checklisten Anwendbarkeit, `N/A`-Begründung, Reviewer,
 Evidence-Pfad, Restrisiko und Follow-up pro standardsrelevantem Spec-Kit-Lauf
 aufzeichnen können.
 
 *`v0.5.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown
-documents and checklists can record applicability, N/A rationale, reviewer,
+documents and checklists can record applicability, `N/A` rationale, reviewer,
 evidence path, residual risk, and follow-up per standards-relevant Spec-Kit
 run.*
 
