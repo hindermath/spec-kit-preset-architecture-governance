@@ -1,10 +1,12 @@
 # Architecture Governance Preset
 
 Version: `0.5.0`
-Requires: `spec-kit >= 0.8.0` (uses the `wrap` and `append` composition
-strategies introduced in 0.8.x).
+Status: published, standard governance preset
+Priority: `20`
+Requires: Spec Kit `>=0.8.0` (uses the `wrap` and `append` composition
+strategies introduced in 0.8.x)
 
-Purpose:
+## Purpose / Zweck
 
 - inject secure-software-architecture, threat-modeling, and cloud-autonomy
   expectations into Spec Kit workflows
@@ -12,6 +14,20 @@ Purpose:
   secure-development preset; the two compose cleanly side by side
 - keep secure-architecture concerns separate from the general
   iSAQB/arc42 architecture method preset
+
+## Install
+
+```bash
+specify preset add \
+  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.5.0.zip \
+  --priority 20
+specify preset info architecture-governance
+```
+
+```bash
+specify preset add --dev /path/to/architecture-governance --priority 20
+specify preset info architecture-governance
+```
 
 Relationship to `isaqb-architecture-governance`:
 
@@ -110,6 +126,16 @@ When not to use:
 - projects with no released or operated cloud runtime where cloud use is
   limited to general development infrastructure; record C3A/C5 as `N/A`
   instead of creating unnecessary evidence
+
+## Safety / Grenzen
+
+- Installation adds architecture governance prompts and evidence templates; it
+  does not perform threat modeling, cloud assurance, or remote checks by
+  itself.
+- Architecture applicability decisions such as C3A/C5 N/A require explicit
+  project evidence.
+- The preset does not grant repository, remote, merge, deployment, secret, or
+  provider-administration authority.
 
 MSL note:
 
