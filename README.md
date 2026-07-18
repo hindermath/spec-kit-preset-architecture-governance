@@ -3,13 +3,13 @@
 Version: `0.5.0`
 Status: published, standard governance preset
 Priority: `20`
-Requires: Spec Kit `>=0.8.0` (uses the `wrap` and `append` composition
-strategies introduced in 0.8.x)
+Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
+strategies introduced in 0.8.x).
 
 ## Purpose / Zweck
 
 - inject secure-software-architecture, threat-modeling, and cloud-autonomy
-  expectations into Spec Kit workflows
+  expectations into Spec-Kit workflows
 - keep architecture concerns separate from the more tactical
   secure-development preset; the two compose cleanly side by side
 - keep secure-architecture concerns separate from the general
@@ -145,7 +145,3 @@ MSL note:
 Release notes:
 
 - `v0.5.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown documents and checklists can record applicability, N/A rationale, reviewer, evidence path, residual risk, and follow-up per standards-relevant Spec-Kit run.
-
-Recommended standalone install priority:
-
-- `20`
