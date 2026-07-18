@@ -132,7 +132,7 @@ When not to use:
 - Installation adds architecture governance prompts and evidence templates; it
   does not perform threat modeling, cloud assurance, or remote checks by
   itself.
-- Architecture applicability decisions such as C3A/C5 N/A require explicit
+- Architecture applicability decisions such as C3A/C5 `N/A` require explicit
   project evidence.
 - The preset does not grant repository, remote, merge, deployment, secret, or
   provider-administration authority.
