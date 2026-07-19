@@ -33,7 +33,7 @@
   in `docs/security/adr/`).
 - Document every `N/A` decision with rationale; never silently omit.
 - Model multi-repository remote delivery as a resumable transaction. Record
-  stable identities, exact heads, completed operations, and revalidation
+  stable identifiers, exact heads, completed operations, and revalidation
   boundaries instead of assuming one process owns the whole transaction.
 - Keep post-merge actions manifest-declared and idempotent. Worker or component
   handoffs may report outcomes but must not introduce executable closeout

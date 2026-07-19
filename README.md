@@ -217,11 +217,11 @@ documented.*
 
 ## Version 0.5.1 / Version 0.5.1
 
-`v0.5.1` ergaenzt fortsetzbare Remote-Transaktionen, exakte stabile
-Operationen, manifestdeklarierte idempotente Post-Merge-Aktionen und die
-Revalidierung direkter sowie gestapelter Abhaengigkeiten.
+`v0.5.1` ergänzt fortsetzbare Remote-Transaktionen, exakte stabile
+Identifikatoren, manifestdeklarierte idempotente Post-Merge-Aktionen und die
+Revalidierung direkter sowie gestapelter Abhängigkeiten.
 
-*`v0.5.1` adds resumable remote transactions, exact stable operations,
+*`v0.5.1` adds resumable remote transactions, exact stable identifiers,
 manifest-declared idempotent post-merge actions, and revalidation of direct and
 stacked dependencies.*
 
