@@ -1,6 +1,6 @@
 # Architecture Governance Preset
 
-Version: `0.5.0`
+Version: `0.5.1`
 Status: published, standard governance preset
 Priority: `20`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
@@ -91,7 +91,7 @@ integrations, and operating model.*
 
 ```bash
 specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.5.0.zip \
+  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.5.1.zip \
   --priority 20
 specify preset info architecture-governance
 ```
@@ -214,6 +214,16 @@ Schulden dokumentiert werden müssen.
 *Also use `isaqb-architecture-governance` when goals, context, building
 blocks, runtime view, deployment view, ADRs, risks, or technical debt must be
 documented.*
+
+## Version 0.5.1 / Version 0.5.1
+
+`v0.5.1` ergaenzt fortsetzbare Remote-Transaktionen, exakte stabile
+Operationen, manifestdeklarierte idempotente Post-Merge-Aktionen und die
+Revalidierung direkter sowie gestapelter Abhaengigkeiten.
+
+*`v0.5.1` adds resumable remote transactions, exact stable operations,
+manifest-declared idempotent post-merge actions, and revalidation of direct and
+stacked dependencies.*
 
 ## Version 0.5.0 / Version 0.5.0
 
