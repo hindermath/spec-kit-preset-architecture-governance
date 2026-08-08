@@ -1,6 +1,6 @@
 # Architecture Governance Preset
 
-Version: `0.5.1`
+Version: `0.5.2`
 Status: published, standard governance preset
 Priority: `20`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
@@ -91,7 +91,7 @@ integrations, and operating model.*
 
 ```bash
 specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.5.1.zip \
+  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.5.2.zip \
   --priority 20
 specify preset info architecture-governance
 ```
@@ -214,6 +214,15 @@ Schulden dokumentiert werden müssen.
 *Also use `isaqb-architecture-governance` when goals, context, building
 blocks, runtime view, deployment view, ADRs, risks, or technical debt must be
 documented.*
+
+## Version 0.5.2 / Version 0.5.2
+
+`v0.5.2` veröffentlicht den agentenneutralen `model-routing.json`-Vertrag für
+die Komposition mit Model Routing Governance; Architekturregeln bleiben
+unverändert.
+
+*`v0.5.2` publishes the agent-neutral `model-routing.json` contract for
+composition with Model Routing Governance; architecture rules are unchanged.*
 
 ## Version 0.5.1 / Version 0.5.1
 

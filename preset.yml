@@ -3,7 +3,7 @@ schema_version: "1.0"
 preset:
   id: "architecture-governance"
   name: "Architecture Governance"
-  version: "0.5.1"
+  version: "0.5.2"
   description: "Adds secure software architecture, resumable remote-transaction boundaries, STRIDE+CAPEC threat modeling, arc42 security cross-cutting concepts, S-ADRs, Zero Trust applicability, OWASP SAMM governance, BSI C3A cloud autonomy, BSI C5 cloud compliance assurance, and audit-ready Spec-Kit run evidence to Spec Kit."
   author: "Thorsten Hindermann"
   repository: "https://github.com/hindermath/spec-kit-preset-architecture-governance"
@@ -14,6 +14,11 @@ requires:
 
 provides:
   templates:
+    - type: "template"
+      name: "architecture-governance-model-routing"
+      file: "model-routing.json"
+      description: "Agent-neutral command-to-role routing contract"
+
     - type: "template"
       name: "constitution-template"
       file: "templates/constitution-addendum.md"
