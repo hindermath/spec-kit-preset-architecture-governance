@@ -11,6 +11,8 @@ class CloudContract(unittest.TestCase):
     def test_catalogue_identity_and_groups(self):
         data = json.loads((ROOT / "templates/c3a-criteria-catalog.json").read_text())
         self.assertEqual((data["catalogue"], data["version"]), ("BSI C3A", "1.0"))
+        self.assertEqual([d["id"] for d in data["domains"]],
+                         [f"SOV-{i}" for i in range(1, 7)])
         self.assertEqual(data["sourceSha256"],
                          "d985b4e7a9969aefda5882a02eeaf4fd97636b2a3ae30f868b25c01a5dcffe2d")
         expected = [f"SOV-{domain}-{number:02}" for domain, count in
@@ -49,9 +51,10 @@ class CloudContract(unittest.TestCase):
         content = (ROOT / "templates/cloud-compliance-assurance-template.md").read_text()
         for phrase in ["Type 1 / Type 2 / Unknown / N/A", "Report date:",
                        "Audit period start", "Audit period end",
-                       "Operating effectiveness assessed", "Customer-side",
+                       "Operating effectiveness assessed over a period (Type 2 only)", "Customer-side",
                        "Exceptions", "Report / evidence", "Unknown"]:
             self.assertIn(phrase, content)
+        self.assertIn("never Yes based on that", content)
 
     def test_manifest_and_wrappers(self):
         manifest = (ROOT / "preset.yml").read_text()
