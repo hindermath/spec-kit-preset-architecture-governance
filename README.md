@@ -89,9 +89,15 @@ integrations, and operating model.*
 
 ### Veröffentlichter Tag / Published Tag
 
+Das folgende Beispiel verwendet den bisherigen veroeffentlichten Stand v0.6.0.
+Der v0.6.1-Kandidat wird bis zur verifizierten Veroeffentlichung ueber den
+Entwicklungs-Checkout geprueft.
+*This example uses published v0.6.0. Validate the v0.6.1 candidate using the
+development checkout until its release has been verified.*
+
 ```bash
 specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.1.zip \
+  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.0.zip \
   --priority 20
 specify preset info architecture-governance
 ```

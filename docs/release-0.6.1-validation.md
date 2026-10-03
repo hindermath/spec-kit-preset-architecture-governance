@@ -12,7 +12,11 @@ Checked: 2026-10-03, macOS. Package candidate, not published release.
   tag archives. Immutable release/tag ZIP comparison follows source approval.
 - Native macOS/Linux/Windows results and exact heads are in the delivery PR.
   Do not infer native success from local results.
-- Professional review, merge and publication: pending.
+- Professional review: Thorsten Hindermann reviewed PR #7 on 2026-10-03;
+  bounded Copilot README correction and exact-head delivery authorised.
+- Copilot follow-up: install example uses the verified published v0.6.0,
+  with v0.6.1 explicitly identified as the development candidate.
+- Merge and publication: pending successful checks of the corrected head.
 - Central baseline 3.3.0, compendium 2.3.0 and both pilot deliveries: pending.
 - No product-start authority or legal compliance claim.
 
