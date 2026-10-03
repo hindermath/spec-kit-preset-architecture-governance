@@ -65,12 +65,48 @@
 ## C5 Audit / Assurance Status
 
 - C5 attestation or report available: [Yes / No / N/A / Open]
-- Report type and date:
+- C5 report type: [Type 1 / Type 2 / Unknown / N/A]
+- Report date:
+- C5 criteria/version:
+- Point-in-time assessment date (Type 1):
+- Audit period start (Type 2):
+- Audit period end (Type 2):
+- Operating effectiveness assessed over a period (Type 2 only): [Yes / No / N/A / Open]
+- Exceptions / deviations:
+- Customer-side controls / responsibilities:
+- Report / evidence reference:
+- Open assurance gaps / follow-up (owner, action, due condition or trigger):
 - Covered provider / service:
 - Covered region(s):
 - Covered control scope:
 - Report validity / renewal date:
 - Equivalent assurance evidence, if no C5 report exists:
+
+### Berichtstyp und Grenzen / Report type and limits
+
+DE: Typ 1 beschreibt Design, Beschreibung und Implementierung der Kontrollen
+am Bewertungsstichtag; er belegt keine
+Wirksamkeit ueber einen Pruefzeitraum. Typ 2 benoetigt Beginn, Ende und die
+belegte Bewertung der operativen Wirksamkeit. Ist der Typ unbekannt, bleibt
+er Unknown mit Open-Folgearbeit. Fehlende Typ-2-Evidence fuer eine benoetigte
+Zeitraumaussage bleibt eine offene Luecke. Report-Verfuegbarkeit, Scope,
+Ausnahmen und kundenseitige Verantwortung sind getrennt zu bewerten.
+
+EN: Type 1 concerns control description, design and implementation as of a
+point in time and cannot establish sustained operating
+effectiveness. Type 2 requires an audit period and evidence that operating
+effectiveness was assessed. Unknown stays Unknown with an Open follow-up.
+Never infer report type or effectiveness from availability or provider claims.
+Missing period evidence remains an assurance gap when period assurance is
+required. This preset records evidence; it performs no C5 audit or certification.
+
+DE: Bei Typ 1 ist die Zeitraum-Wirksamkeit No oder N/A, niemals Yes aus diesem
+Bericht. Bei Typ 2 bleibt ein fehlender Zeitraum oder Wirksamkeitsnachweis
+Open; ein Typ-2-Titel alleine rechtfertigt kein OK.
+
+EN: For Type 1, period effectiveness is No or N/A, never Yes based on that
+report. For Type 2, missing period/effectiveness evidence remains Open; the
+report title alone cannot justify OK.
 
 ## Shared Responsibility
 
