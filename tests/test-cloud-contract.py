@@ -56,9 +56,21 @@ class CloudContract(unittest.TestCase):
             self.assertIn(phrase, content)
         self.assertIn("never Yes based on that", content)
 
+    def test_regulatory_architecture_boundaries(self):
+        for filename in ["constitution", "spec", "plan", "tasks", "agent-file"]:
+            content = (ROOT / f"templates/{filename}-addendum.md").read_text()
+            for phrase in ["Security evidence owns", "GDPR", "AI Act", "CRA",
+                           "NIS2", "DORA", "not blanket regulatory exemptions",
+                           "equivalent project-owned records", "tested recovery"]:
+                self.assertIn(phrase, content)
+        for filename in ["adr", "arc42-security", "threat-model"]:
+            content = (ROOT / f"templates/{filename}-template.md").read_text()
+            self.assertIn("Retention / deletion / defaults", content)
+            self.assertIn("Legal Open finding", content)
+
     def test_manifest_and_wrappers(self):
         manifest = (ROOT / "preset.yml").read_text()
-        self.assertIn('version: "0.6.0"', manifest)
+        self.assertIn('version: "0.6.1"', manifest)
         self.assertIn('name: "c3a-criteria-catalog"', manifest)
         files = re.findall(r'^\s+file: "([^"]+)"', manifest, re.M)
         self.assertEqual(len(files), 18)
