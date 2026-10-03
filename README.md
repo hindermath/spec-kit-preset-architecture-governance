@@ -1,6 +1,6 @@
 # Architecture Governance Preset
 
-Version: `0.5.2`
+Version: `0.6.0`
 Status: published, standard governance preset
 Priority: `20`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
@@ -91,7 +91,7 @@ integrations, and operating model.*
 
 ```bash
 specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.5.2.zip \
+  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.0.zip \
   --priority 20
 specify preset info architecture-governance
 ```
@@ -166,6 +166,7 @@ presets when both concerns are relevant.*
 - `samm-assessment-template`
 - `cloud-autonomy-applicability-template`
 - `cloud-compliance-assurance-template`
+- `c3a-criteria-catalog` (BSI v1.0, 30 groups, source hash)
 
 Default evidence location: `docs/security/`. S-ADRs default to
 `docs/security/adr/` as one file per decision.
@@ -214,6 +215,46 @@ Schulden dokumentiert werden müssen.
 *Also use `isaqb-architecture-governance` when goals, context, building
 blocks, runtime view, deployment view, ADRs, risks, or technical debt must be
 documented.*
+
+## Version 0.6.0 / Version 0.6.0
+
+C5 Typ 1 beschreibt den bewerteten Zeitpunkt, nicht die Wirksamkeit ueber einen
+Zeitraum. Typ 2 braucht Pruefzeitraum und Wirksamkeitsbewertung. Unbekannte
+Reporttypen bleiben `Unknown` mit offener Evidence-Luecke. Kriterienversion,
+Scope, Ausnahmen und Kundenverantwortung werden getrennt erfasst.
+
+*C5 Type 1 is point-in-time assurance, not sustained operating effectiveness.
+Type 2 needs the audit period and effectiveness assessment. Unknown types
+remain Unknown with a tracked gap. Record report version, scope, exceptions
+and customer-side responsibilities separately.*
+
+C3A erhaelt alle 30 Gruppen aus dem BSI-Katalog v1.0 mit exakten C-/AC-/SI-
+Kennungen. Die Themenabschnitte bleiben Einstiegspunkte; sie ersetzen keine
+kriterienbezogene Evidence. Jede Gruppe bleibt sichtbar, auch bei `N/A` oder
+`Open`. Ein C5-Bericht erfuellt nicht automatisch C3A-Kriterien.
+
+*C3A now includes all 30 groups and exact C/AC/SI identifiers from BSI v1.0.
+The thematic summaries link to criterion-level evidence rather than replacing
+it. N/A requires rationale; Open requires owner, action and reevaluation.
+C5 assurance is not automatic C3A satisfaction. The preset performs no audit.*
+
+Bestehende Evidence bleibt historisch unveraendert. Bei neuer oder wesentlich
+geaenderter Cloud-Bewertung wird ein neuer, verlinkter Nachweis erstellt;
+fehlende neue Felder sind offene Luecken, kein nachtraegliches Bestehen.
+Fuer reine Ausbildungs-/Entwicklungsinfrastruktur ist weiterhin begruendetes
+`N/A` moeglich. Version, Quelle und Review-Scope bleiben sichtbar.
+
+*Preserve historical evidence. Create a linked current assessment for a new or
+materially changed cloud scope; missing fields are gaps, not retroactive passes.
+Justified N/A remains available, including education/development-only scopes.*
+
+Quelle, Varianten und bekannte Quell-Unstimmigkeiten:
+[C3A/C5 evidence contract](docs/c3a-c5-evidence-contract.md).
+Lokale strukturelle Regression: `python3 tests/test-cloud-contract.py`.
+Die Tests pruefen Vorlagen/Grenzen, nicht die Wahrheit eines Provider-Testats.
+
+*See the linked contract for provenance and source anomalies. Structural
+tests check shipped templates and boundaries, not provider-report validity.*
 
 ## Version 0.5.2 / Version 0.5.2
 
