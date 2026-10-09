@@ -70,7 +70,7 @@ class CloudContract(unittest.TestCase):
 
     def test_manifest_and_wrappers(self):
         manifest = (ROOT / "preset.yml").read_text()
-        self.assertIn('version: "0.6.1"', manifest)
+        self.assertIn('version: "0.6.2"', manifest)
         self.assertIn('name: "c3a-criteria-catalog"', manifest)
         files = re.findall(r'^\s+file: "([^"]+)"', manifest, re.M)
         self.assertEqual(len(files), 18)
@@ -84,6 +84,30 @@ class CloudContract(unittest.TestCase):
             for phrase in ["c3a-criteria-catalog", "Type 1", "Type 2", "Unknown",
                            "historical records"]:
                 self.assertIn(phrase, content)
+
+    def test_exact_release_installation_command(self):
+        manifest = (ROOT / "preset.yml").read_text()
+        version = re.search(r'^\s+version: "([^"]+)"', manifest, re.M).group(1)
+        description = re.search(r'^\s+description: "([^"]+)"', manifest, re.M).group(1)
+        self.assertLess(len(description), 200)
+        archive = ("https://github.com/hindermath/spec-kit-preset-architecture-governance/"
+                   f"archive/refs/tags/v{version}.zip")
+        command = f"specify preset add --from {archive} --priority 20"
+        # DE: Keine Zeilenfortsetzung: der Community-Validator liest einzelne Zeilen.
+        # EN: No continuation: the community verifier parses individual command lines.
+        pattern = re.compile(r"^" + re.escape(command) + r"\r?$", re.M)
+        self.assertRegex((ROOT / "README.md").read_text(), pattern)
+        for ending in ["\n", "\r\n"]:
+            with self.subTest(ending=repr(ending)):
+                self.assertRegex(command + ending, pattern)
+        invalid_commands = [
+            "specify preset add " + chr(92) + "\n  --from " + archive + " --priority 20",
+            command.replace(f"v{version}.zip", "v0.6.0.zip"),
+            command.replace("--priority 20", "--priority 10"),
+        ]
+        for invalid in invalid_commands:
+            with self.subTest(invalid=invalid):
+                self.assertNotRegex(invalid, pattern)
 
 
 if __name__ == "__main__":
