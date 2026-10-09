@@ -1,6 +1,6 @@
 # Architecture Governance Preset
 
-Version: `0.6.1`
+Version: `0.6.2`
 Status: stable release; professional review and native CI completed
 Priority: `20`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
@@ -89,15 +89,16 @@ integrations, and operating model.*
 
 ### Veröffentlichter Tag / Published Tag
 
-Der Tag v0.6.1 ist stabil veroeffentlicht. Tag und Paketinhalt bleiben
-unveraendert; Release- und Integrationsnachweise sind getrennt.
-*Tag v0.6.1 is published as a stable release. Its tag and package payload are
-immutable; release and consumer integration evidence remain separate.*
+v0.6.2 bindet die einzeilige Installation an das exakte aktuelle Tag-ZIP.
+Architektur- und regulatorische Inhalte bleiben gegenueber v0.6.1 unveraendert.
+Historische Tags und Archive bleiben erhalten; Release und Integration sind
+getrennte Nachweise. Siehe [Patch-Nachweis](docs/release-0.6.2-validation.md).
+*v0.6.2 binds the one-line installation command to its exact tag archive.
+Architecture and regulatory contents are unchanged from v0.6.1. Historical
+tags and archives remain immutable; release and integration are separate.*
 
 ```bash
-specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.1.zip \
-  --priority 20
+specify preset add --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.2.zip --priority 20
 specify preset info architecture-governance
 ```
 
