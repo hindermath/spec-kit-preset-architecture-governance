@@ -1,6 +1,13 @@
 # Architecture Governance Preset
 
-Version: `0.6.2`
+Patch **0.6.3** liefert die verbesserte zweisprachige Einstiegs- und
+Kompositionsdokumentation. Verhalten und Berechtigungsgrenzen bleiben erhalten.
+[Release-Nachweis / Release record](docs/release-0.6.3-validation.md).
+
+*Patch 0.6.3 packages the improved bilingual getting-started and composition
+guide. Behavior and authority boundaries remain unchanged.*
+
+Version: `0.6.3`
 Status: stable release; professional review and native CI completed
 Priority: `20`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
@@ -155,7 +162,7 @@ Architecture and regulatory contents are unchanged from v0.6.1. Historical
 tags and archives remain immutable; release and integration are separate.*
 
 ```bash
-specify preset add --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.2.zip --priority 20
+specify preset add --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.3.zip --priority 20
 specify preset info architecture-governance
 ```
 
