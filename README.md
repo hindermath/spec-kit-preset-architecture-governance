@@ -8,6 +8,63 @@ strategies introduced in `0.8.x`).
 
 ## Zweck / Purpose
 
+### Einstieg und Arbeitsweise / Getting Started and Workflow
+
+Nach Installation im initialisierten Zielprojekt ergänzt das
+[Manifest](preset.yml) Specify/Plan/Tasks durch `wrap` und ihre Vorlagen
+sowie die Constitution durch `append`. Diese Anweisungen erzeugen nicht
+automatisch Threat Models oder abgeschlossene Reviews. Eigenständige Starter
+und das Agent-Guidance-Addendum müssen gezielt verwendet werden; Installation
+allein belegt keine Übernahme in alle Agenten-Dateien.
+
+*In an initialized target project, the [manifest](preset.yml) wraps
+Specify/Plan/Tasks and appends guidance to their templates and the
+constitution. Instructions do not automatically produce threat models or
+completed reviews. Use standalone starters and the agent-guidance addendum
+deliberately; installation alone proves no inclusion in every agent file.*
+
+Beispiel für eine neue externe Integration: Nenne `threat-model-template`
+und `adr-template`, plane `docs/security/threat-model.md` und einen S-ADR
+unter `docs/security/adr/`. Beschreibe Datenfluss, Trust Boundaries
+(Vertrauensgrenzen), Bedrohungen, Alternativen und Gegenmaßnahmen. Tasks
+benennt verbleibende Dokumentations-, Implementierungs- und Review-Arbeit
+sowie konkrete Tests. Bestehende Evidence aktualisieren statt verdoppeln.
+
+*For a new external integration, explicitly select `threat-model-template`
+and `adr-template`; plan `docs/security/threat-model.md` and a security ADR
+under `docs/security/adr/`. Describe data flow, trust boundaries, threats,
+alternatives and mitigations. Tasks names remaining documentation,
+implementation, review and testing. Update existing evidence instead of
+duplicating it. These are suggested outputs, not completed assessments.*
+
+Cloud-Starter nur bei passendem Scope wählen. Anwendbarkeit kommt aus dem
+projektgeführten Security-Nachweis; hier keine zweite Rechtsentscheidung
+treffen. `Applicable` ist keine bestandene Prüfung; `N/A` braucht Grund und
+Trigger, `Open` Owner und Folgeaktion. Leere Starter sind keine Evidence.
+
+*Select cloud starters only for relevant scope. Project-owned Security
+evidence owns regulatory applicability; do not invent a competing legal
+decision here. Applicable is not passed; N/A needs rationale and trigger,
+Open an owner and follow-up. Empty starters are not evidence.*
+
+Kleinere Prioritätszahl bedeutet höhere Auflösungspriorität, nicht frühere
+Ausführung oder Abnahme. `append` ergänzt, `wrap` verschachtelt; `replace`
+oder lokale Overrides können andere gleichnamige Beiträge verdrängen.
+Individuelle Reihenfolgen und Drittanbieter-Kombinationen separat prüfen:
+`specify preset resolve plan-template` zeigt die Vorlagenkette; erzeugte
+Agentenflächen zeigen die tatsächlich eingebundenen Command-Anweisungen.
+
+*Lower numbers mean higher resolution precedence, not earlier execution or
+acceptance. Append adds, wrap nests; replace or local overrides can hide
+same-name contributions. Check custom orderings and third-party combinations
+separately using plan-template resolution and generated agent instructions.*
+
+Leserpfad / Reader path:
+[Installation](#installation--installation) →
+[Evidenzvorlagen / Evidence Templates](#evidenzvorlagen--evidence-templates) →
+[Prüfung / Verification](#prüfung--verification) →
+[Fehlersuche / Troubleshooting](#fehlersuche--troubleshooting).
+
 Dieses Standard-Preset bringt sichere Softwarearchitektur, Threat Modeling,
 Zero Trust, Security Architecture Decision Records und Cloud-Assurance-Fragen
 in Spec-Kit-Workflows. Es ergänzt `security-governance`, ohne dessen
@@ -113,12 +170,12 @@ specify preset info architecture-governance
 
 | Priority | Preset |
 |---:|---|
-| 10 | `security-governance` |
-| 20 | `architecture-governance` |
-| 30 | `isaqb-architecture-governance` |
-| 40 | `a11y-governance` |
-| 50 | `cross-platform-governance` |
-| 60 | `agent-parity-governance` |
+| 10 | [security-governance](https://github.com/hindermath/spec-kit-preset-security-governance) |
+| 20 | [architecture-governance](https://github.com/hindermath/spec-kit-preset-architecture-governance) |
+| 30 | [isaqb-architecture-governance](https://github.com/hindermath/spec-kit-preset-isaqb-architecture-governance) |
+| 40 | [a11y-governance](https://github.com/hindermath/spec-kit-preset-a11y-governance) |
+| 50 | [cross-platform-governance](https://github.com/hindermath/spec-kit-preset-cross-platform-governance) |
+| 60 | [agent-parity-governance](https://github.com/hindermath/spec-kit-preset-agent-parity-governance) |
 
 `architecture-governance` behandelt sichere Architektur.
 `isaqb-architecture-governance` behandelt allgemeine Softwarearchitektur. Wenn
@@ -182,7 +239,7 @@ Default evidence location: `docs/security/`. S-ADRs default to
 ```bash
 specify preset list
 specify preset info architecture-governance
-specify preset resolve
+specify preset resolve threat-model-template
 specify check
 ```
 
