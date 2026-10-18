@@ -3,7 +3,7 @@ schema_version: "1.0"
 preset:
   id: "architecture-governance"
   name: "Architecture Governance"
-  version: "0.6.2"
+  version: "0.6.3"
   description: "Adds secure architecture, STRIDE/CAPEC threat models, arc42, S-ADRs, Zero Trust, SAMM, C3A/C5 cloud assurance, and audit-ready evidence to Spec Kit."
   author: "Thorsten Hindermann"
   repository: "https://github.com/hindermath/spec-kit-preset-architecture-governance"
