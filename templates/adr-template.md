@@ -121,3 +121,15 @@ NIS2/DORA-related scope. C3A/C5 evidence does not replace regulatory evidence.
 - AI/tool usage boundary / prompt and logging safeguards:
 - Supplier dependency / tested recovery / exit / concentration risk:
 - Legal Open finding / qualified reviewer / next action / due date:
+
+## Nutzungshilfe / Reader help
+
+DE: Sicherheitsentscheidungen zur Systemstruktur nachvollziehbar machen, getrennt von der codebezogenen Security-Prüfung. Diese Vorlage ist ein auszufüllender Starter, kein bestandener Nachweis. Vorhandene passende Evidence weiterverwenden.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-architecture-governance/blob/main/docs/user-guide.md).
+
+EN: Make system-structure security decisions traceable, separately from code-level security verification. This template is a starter to complete, not passed evidence. Reuse suitable existing evidence.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-architecture-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

@@ -1,14 +1,23 @@
 # Architecture Governance Preset
 
-Patch **0.6.3** liefert die verbesserte zweisprachige Einstiegs- und
-Kompositionsdokumentation. Verhalten und Berechtigungsgrenzen bleiben erhalten.
-[Release-Nachweis / Release record](docs/release-0.6.3-validation.md).
+<!-- current-package: 0.6.4 -->
 
-*Patch 0.6.3 packages the improved bilingual getting-started and composition
+**Leserpfad / Reader path:** [Deutsch: Einstieg, Begriffe und Fehlerhilfe](docs/user-guide.md) · [English: start, terms and troubleshooting](docs/user-guide.EN.md).
+
+Quellkandidat **v0.6.4**. Der [Release-Stand](https://github.com/hindermath/spec-kit-preset-architecture-governance/releases) wird getrennt geprüft; ein Commit auf main ist noch keine Veröffentlichung oder Installation.
+
+*Source candidate v0.6.4. The release page records actual publication separately; a main-branch commit is not publication or installation.*
+
+
+Patch **0.6.4** liefert die verbesserte zweisprachige Einstiegs- und
+Kompositionsdokumentation. Verhalten und Berechtigungsgrenzen bleiben erhalten.
+[Release-Nachweis / Release record](docs/release-0.6.4-validation.md).
+
+*Patch 0.6.4 packages the improved bilingual getting-started and composition
 guide. Behavior and authority boundaries remain unchanged.*
 
-Version: `0.6.3`
-Status: stable release; professional review and native CI completed
+Version: `0.6.4`
+Status: Quellkandidat zur Sichtung / source candidate for review
 Priority: `20`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in `0.8.x`).
@@ -162,7 +171,7 @@ Architecture and regulatory contents are unchanged from v0.6.1. Historical
 tags and archives remain immutable; release and integration are separate.*
 
 ```bash
-specify preset add --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.3.zip --priority 20
+specify preset add --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.4.zip --priority 20
 specify preset info architecture-governance
 ```
 
