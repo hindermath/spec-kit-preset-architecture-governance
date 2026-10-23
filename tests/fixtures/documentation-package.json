@@ -1,0 +1,12 @@
+{
+  "id": "architecture-governance",
+  "version": "0.6.4",
+  "priority": 20,
+  "readers": [
+    "docs/user-guide.md",
+    "docs/user-guide.EN.md",
+    "docs/documentation-closeout.md"
+  ],
+  "sourceBaseCommit": "55106cb5e68294055f95d4fdc29a27720f04a74f",
+  "preserveHistoricalEvidence": true
+}
