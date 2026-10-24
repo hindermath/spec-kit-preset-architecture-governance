@@ -1,0 +1,14 @@
+{
+  "release_status": "NotEstablishedAtPreparation",
+  "candidate_status": "Prepared",
+  "packageVersion": "0.6.5",
+  "presetId": "architecture-governance",
+  "externalPublicationEvidence": "https://github.com/hindermath/spec-kit-preset-architecture-governance/releases/tag/v0.6.5",
+  "documentationPr": "https://github.com/hindermath/spec-kit-preset-architecture-governance/pull/13",
+  "schemaVersion": 1,
+  "historicalPublicationVersion": "0.6.4",
+  "runtimeChanged": false,
+  "generatorSchemaChanged": false,
+  "preparedAt": "2026-10-24T12:50:04.9537270+00:00",
+  "sourceCommit": "568438f7ceceb7fdf8ad0a0304f4a20f2f395fdf"
+}
