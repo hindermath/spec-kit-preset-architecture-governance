@@ -2,9 +2,13 @@
 
 <!-- current-package: 0.6.4 -->
 
+[Release-Abschluss und Verbesserungsprofil / Publication closeout and improvement profile](release-0.6.4-validation.md).
+
+The later main-branch documentation follow-up does not change the existing tag archive.
+
 [Deutsch](user-guide.md) · [Preset reference](../README.md)
 
-Source candidate **v0.6.4**. Verify the actually published version on the [release page](https://github.com/hindermath/spec-kit-preset-architecture-governance/releases). This guide grants no merge, release or project authority.
+Published package **v0.6.4**. Verify the actually published version on the [release page](https://github.com/hindermath/spec-kit-preset-architecture-governance/releases). This guide grants no merge, release or project authority.
 
 Contents: [Start](#start) · [Example](#example) · [Terms](#terms) · [Routing](#routing) · [Troubleshooting](#help) · [References](#references)
 
