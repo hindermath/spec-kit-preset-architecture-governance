@@ -70,7 +70,7 @@ class CloudContract(unittest.TestCase):
 
     def test_manifest_and_wrappers(self):
         manifest = (ROOT / "preset.yml").read_text()
-        self.assertIn('version: "0.6.4"', manifest)
+        self.assertIn('version: "0.6.5"', manifest)
         self.assertIn('name: "c3a-criteria-catalog"', manifest)
         files = re.findall(r'^\s+file: "([^"]+)"', manifest, re.M)
         self.assertEqual(len(files), 18)
