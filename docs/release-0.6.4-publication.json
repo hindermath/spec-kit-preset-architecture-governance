@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "presetId": "architecture-governance",
+  "version": "0.6.4",
+  "repository": "https://github.com/hindermath/spec-kit-preset-architecture-governance",
+  "candidate_status": "HistoricalCandidate",
+  "release_status": "Published",
+  "tag": "v0.6.4",
+  "tagCommit": "bf2261d0d7c31e1c892dfa2b9708e5978dd28a73",
+  "verifiedAt": "2026-10-24T10:55:24.5966620+00:00",
+  "release": {
+    "id": 422326298,
+    "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/releases/tag/v0.6.4",
+    "publishedAt": "2026-10-23T21:29:31.0000000+00:00",
+    "preRelease": false,
+    "draft": false
+  },
+  "archive": {
+    "sha256": "020349ca49db89c655762b1cc1ce86d5f40ea0e4b2f598aac443ed6e0dbdc6e4",
+    "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.4.zip",
+    "status": "Verified",
+    "verifiedAt": "2026-10-24T10:55:24.5966620+00:00",
+    "bytes": 88856
+  },
+  "evidenceComplete": true,
+  "historicalDocumentSha256": "1802ba4791f263281d2962a3a986a979f82ada8034a0d83884af917f94586884",
+  "comparison": {
+    "fromTag": "v0.5.2",
+    "toTag": "v0.6.4",
+    "toCommit": "bf2261d0d7c31e1c892dfa2b9708e5978dd28a73",
+    "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/compare/45b7cd667e25d3ec22a14fc9f17a085b507b7bfe...bf2261d0d7c31e1c892dfa2b9708e5978dd28a73",
+    "fromCommit": "45b7cd667e25d3ec22a14fc9f17a085b507b7bfe"
+  },
+  "improvements": [
+    {
+      "introducedIn": "v0.6.0",
+      "type": "ProfessionalContract",
+      "sourcePaths": [
+        "templates/c3a-criteria-catalog.json",
+        "templates/cloud-compliance-assurance-template.md",
+        "tests/test-cloud-contract.py"
+      ],
+      "problem": {
+        "de": "Cloud-Autonomie und Provider-Nachweise waren nicht gleich präzise strukturiert.",
+        "en": "Cloud autonomy and provider evidence lacked equally precise structure."
+      },
+      "description": {
+        "de": "C3A-Kriterien und C5-Evidence wurden explizit; Zeitpunkt, Prüfzeitraum und Wirksamkeit werden getrennt.",
+        "en": "C3A criteria and C5 evidence became explicit; as-of-date, review period and effectiveness remain distinct."
+      },
+      "benefit": {
+        "de": "Architekturentscheidungen lassen sich an konkrete Kriterien und echte Provider-Evidence binden.",
+        "en": "Architecture decisions can be linked to concrete criteria and actual provider evidence."
+      },
+      "commit": "45b310e53d5e361f15d48701cc2eda0a1295b554"
+    },
+    {
+      "introducedIn": "v0.6.1",
+      "type": "ProfessionalContract",
+      "sourcePaths": [
+        "templates/threat-model-template.md",
+        "templates/adr-template.md",
+        "tests/test-cloud-contract.py"
+      ],
+      "problem": {
+        "de": "Datenschutz- und Resilienzfragen benötigten klarere Entscheidungsgrenzen.",
+        "en": "Privacy and resilience needed clearer decision boundaries."
+      },
+      "description": {
+        "de": "Vorlagen und Architekturhinweise ergänzen Datenschutz, Resilienz und begrenzte Nachweisaussagen; 0.6.2 korrigierte den Installationsbefehl.",
+        "en": "Templates and guidance add privacy, resilience and bounded evidence claims; 0.6.2 corrected the install command."
+      },
+      "benefit": {
+        "de": "Offene Architekturfragen werden benannt, statt eine bestandene Provider- oder Produktprüfung zu behaupten.",
+        "en": "Open architecture questions remain visible instead of implying provider or product acceptance."
+      },
+      "commit": "21c0f43d1c93455c43e989de965d45c2851e824f"
+    },
+    {
+      "introducedIn": "v0.6.4",
+      "type": "DocumentationUsability",
+      "sourcePaths": [
+        "docs/user-guide.md",
+        "docs/user-guide.EN.md",
+        "tests/test-documentation-closeout.ps1"
+      ],
+      "problem": {
+        "de": "Ein kurzer README-Einstieg erklärte die vollständigen Leserpfade und Grenzen noch nicht gleichwertig.",
+        "en": "The short README entry did not yet explain the complete reader journey and limits equally."
+      },
+      "description": {
+        "de": "Deutsch-/Englisch-Leitfäden, Command-/Vorlagen-Erklärungen und Dokumentationsregressionen wurden ergänzt. Frühere Einstiegsverbesserungen und der letzte Patch werden getrennt ausgewiesen.",
+        "en": "German/English guides, command/template explanations and documentation regressions were added. Earlier entry-point improvements and the final patch are reported separately."
+      },
+      "benefit": {
+        "de": "Lernende finden Voraussetzungen, Beispiel, Ergebnis und Fehlerhilfe. Neue Textklarheit ist keine neue Runtime-Funktion oder menschliche Abnahme.",
+        "en": "Learners can find prerequisites, an example, its result and troubleshooting. Clearer text is not a new runtime feature or human acceptance."
+      },
+      "commit": "bf2261d0d7c31e1c892dfa2b9708e5978dd28a73"
+    }
+  ],
+  "historicalValidation": {
+    "checks": [
+      {
+        "name": "Reader paths (macos-15)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/actions/runs/39992114558/job/120546191369",
+        "startedAt": "2026-10-23T17:04:55Z",
+        "completedAt": "2026-10-23T17:05:03Z",
+        "head": "38f5fd4191d9f4e71bc719ccf521125c63fe7401"
+      },
+      {
+        "name": "contract (macos-latest)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/actions/runs/39992114504/job/120546191366",
+        "startedAt": "2026-10-23T17:07:10Z",
+        "completedAt": "2026-10-23T17:07:16Z",
+        "head": "38f5fd4191d9f4e71bc719ccf521125c63fe7401"
+      },
+      {
+        "name": "contract (windows-latest)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/actions/runs/39992114504/job/120546191341",
+        "startedAt": "2026-10-23T17:04:54Z",
+        "completedAt": "2026-10-23T17:05:10Z",
+        "head": "38f5fd4191d9f4e71bc719ccf521125c63fe7401"
+      },
+      {
+        "name": "Reader paths (windows-2022)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/actions/runs/39992114558/job/120546191316",
+        "startedAt": "2026-10-23T17:04:54Z",
+        "completedAt": "2026-10-23T17:05:04Z",
+        "head": "38f5fd4191d9f4e71bc719ccf521125c63fe7401"
+      },
+      {
+        "name": "Reader paths (ubuntu-24.04)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/actions/runs/39992114558/job/120546191148",
+        "startedAt": "2026-10-23T17:04:53Z",
+        "completedAt": "2026-10-23T17:05:05Z",
+        "head": "38f5fd4191d9f4e71bc719ccf521125c63fe7401"
+      },
+      {
+        "name": "contract (ubuntu-latest)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-architecture-governance/actions/runs/39992114504/job/120546191008",
+        "startedAt": "2026-10-23T17:04:54Z",
+        "completedAt": "2026-10-23T17:05:04Z",
+        "head": "38f5fd4191d9f4e71bc719ccf521125c63fe7401"
+      }
+    ],
+    "pr": "https://github.com/hindermath/spec-kit-preset-architecture-governance/pull/12",
+    "mergeCommit": "bf2261d0d7c31e1c892dfa2b9708e5978dd28a73",
+    "reviewedHead": "38f5fd4191d9f4e71bc719ccf521125c63fe7401"
+  },
+  "newDocumentationReview": "Pending exact-head human review; no merge or publication authority.",
+  "boundary": "Documentation source only; no new package, runtime behavior, approval, installation, catalog update or cancelled dynamic routing."
+}
