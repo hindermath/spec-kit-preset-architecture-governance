@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "presetId": "architecture-governance",
+  "packageVersion": "0.6.6",
+  "historicalPublicationVersion": "0.6.4",
+  "candidate_status": "Prepared",
+  "release_status": "NotEstablishedAtPreparation",
+  "sourceCommit": "07f00d87b61b76137563210578f103da87c5ee69",
+  "previousReleaseVersion": "0.6.5",
+  "externalPublicationEvidence": "https://github.com/hindermath/spec-kit-preset-architecture-governance/releases/tag/v0.6.6",
+  "runtimeChanged": false,
+  "generatorSchemaChanged": false,
+  "changeKind": "SecurityPolicyDocumentation",
+  "authorizationReference": "Thorsten Hindermann, 2026-11-13: implement security baseline and publish current presets, including controlled Level-0/Home/Level-2 rollout; MergeAndSync with formal-review-only Admin-Bypass.",
+  "preparedAt": "2026-11-13T08:24:34.4080520+00:00"
+}
