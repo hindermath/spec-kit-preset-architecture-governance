@@ -1,8 +1,8 @@
 # User guide: architecture-governance
 
-<!-- current-package: 0.6.5 -->
+<!-- current-package: 0.6.6 -->
 
-Package identity: **v0.6.5**. [Preparation and publication boundary](release-0.6.5-validation.md). The release page, not this preparation snapshot, proves publication and the external archive hash. Earlier version records below remain historical.
+Package identity: **v0.6.6**. [Preparation and publication boundary](release-0.6.6-validation.md). The release page, not this preparation snapshot, proves publication and the external archive hash. Earlier version records below remain historical.
 
 [Release-Abschluss und Verbesserungsprofil / Publication closeout and improvement profile](release-0.6.4-validation.md).
 

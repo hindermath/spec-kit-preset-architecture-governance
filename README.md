@@ -1,10 +1,10 @@
 # Architecture Governance Preset
 
-<!-- current-package: 0.6.5 -->
+<!-- current-package: 0.6.6 -->
 
-Paketkennung: **v0.6.5**. [Vorbereitung und Veröffentlichungsgrenze](docs/release-0.6.5-validation.md). Die Release-Seite und der externe Archivnachweis belegen die Veröffentlichung, nicht dieser Vorbereitungsstand. Frühere Versionsnachweise unten bleiben historisch.
+Paketkennung: **v0.6.6**. [Vorbereitung und Veröffentlichungsgrenze](docs/release-0.6.6-validation.md). Die Release-Seite und der externe Archivnachweis belegen die Veröffentlichung, nicht dieser Vorbereitungsstand. Frühere Versionsnachweise unten bleiben historisch.
 
-<span lang="en">Package identity: v0.6.5. The release page and external archive evidence prove publication, not this preparation snapshot. Earlier version records below remain historical.</span>
+<span lang="en">Package identity: v0.6.6. The release page and external archive evidence prove publication, not this preparation snapshot. Earlier version records below remain historical.</span>
 
 [Release-Abschluss und Verbesserungsprofil / Publication closeout and improvement profile](docs/release-0.6.4-validation.md).
 
@@ -181,7 +181,7 @@ Architecture and regulatory contents are unchanged from v0.6.1. Historical
 tags and archives remain immutable; release and integration are separate.*
 
 ```bash
-specify preset add --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.5.zip --priority 20
+specify preset add --from https://github.com/hindermath/spec-kit-preset-architecture-governance/archive/refs/tags/v0.6.6.zip --priority 20
 specify preset info architecture-governance
 ```
 
